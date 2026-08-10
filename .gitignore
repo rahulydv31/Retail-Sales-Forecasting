@@ -31,3 +31,8 @@ __pycache__/
 # Build
 dist/
 build/
+
+# Large project datasets
+data/raw/*.csv
+data/featured/*.csv
+data/processed/*.csv
