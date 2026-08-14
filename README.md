@@ -71,7 +71,14 @@ Streamlit Dashboard
 
 ### Dataset
 
-![Dataset](./docs/screenshots/dataset.png)
+The project uses retail sales data containing sales, store information, transactions, oil prices, and holiday events.
+
+Due to the large size of the dataset files, the CSV files are excluded from Git version control.
+
+Place the raw dataset files inside:
+
+```text
+data/raw/
 
 ### Predictions
 
