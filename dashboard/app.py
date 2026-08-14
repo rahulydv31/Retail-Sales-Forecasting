@@ -21,8 +21,14 @@ RESIDUAL_PLOT_PATH = Path(
     "models/evaluation/residual_plot.png"
 )
 
-featured = pd.read_csv(DATA_PATH)
-predictions = pd.read_csv(PREDICTION_PATH)
+@st.cache_data
+def load_data():
+    featured_data = pd.read_csv(DATA_PATH)
+    predictions_data = pd.read_csv(PREDICTION_PATH)
+    return featured_data, predictions_data
+
+
+featured, predictions = load_data()
 # ---------------- Sidebar ---------------- #
 
 st.sidebar.title("Retail Sales Forecasting")
